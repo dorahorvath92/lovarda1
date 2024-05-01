@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C0A9D87-971F-4885-A487-ACFC529FF6E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>lovarda1</RootNamespace>
+    <AssemblyName>lovarda1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addhorse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addhorse.Designer.cs">
+      <DependentUpon>addhorse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allatorvos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allatorvos.Designer.cs">
+      <DependentUpon>allatorvos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beosztaskeszites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="beosztaskeszites.Designer.cs">
+      <DependentUpon>beosztaskeszites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="boxkezeles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="boxkezeles.Designer.cs">
+      <DependentUpon>boxkezeles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="istallotulajdonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="istallotulajdonos.Designer.cs">
+      <DependentUpon>istallotulajdonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="lovakkezelese.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lovakkezelese.Designer.cs">
+      <DependentUpon>lovakkezelese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lovasoktato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lovasoktato.Designer.cs">
+      <DependentUpon>lovasoktato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lovasz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lovasz.Designer.cs">
+      <DependentUpon>lovasz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oktatolomegtekintes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oktatolomegtekintes.Designer.cs">
+      <DependentUpon>oktatolomegtekintes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oraidopontok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oraidopontok.Designer.cs">
+      <DependentUpon>oraidopontok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tulajdonos_lo_hozzaad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tulajdonos_lo_hozzaad.Designer.cs">
+      <DependentUpon>tulajdonos_lo_hozzaad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vizsgalatidopontok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vizsgalatidopontok.Designer.cs">
+      <DependentUpon>vizsgalatidopontok.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addhorse.resx">
+      <DependentUpon>addhorse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allatorvos.resx">
+      <DependentUpon>allatorvos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="beosztaskeszites.resx">
+      <DependentUpon>beosztaskeszites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="boxkezeles.resx">
+      <DependentUpon>boxkezeles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="istallotulajdonos.resx">
+      <DependentUpon>istallotulajdonos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lovakkezelese.resx">
+      <DependentUpon>lovakkezelese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lovasoktato.resx">
+      <DependentUpon>lovasoktato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lovasz.resx">
+      <DependentUpon>lovasz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oktatolomegtekintes.resx">
+      <DependentUpon>oktatolomegtekintes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oraidopontok.resx">
+      <DependentUpon>oraidopontok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tulajdonos_lo_hozzaad.resx">
+      <DependentUpon>tulajdonos_lo_hozzaad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vizsgalatidopontok.resx">
+      <DependentUpon>vizsgalatidopontok.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="loginDataSet.xsc">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet.xss">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
